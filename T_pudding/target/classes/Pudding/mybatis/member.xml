@@ -6,8 +6,8 @@
 <mapper namespace="Login.model.Customer">
 	
 	<insert id="InsertData">
-		insert into customer(customerno,customer_name,customer_id,customer_passwd,customer_email)
-		values(customer_seq.nextval,#{customer_name},#{customer_id},#{customer_passwd},#{customer_email})
+		insert into customer(customerno,customer_name,customer_id,customer_passwd,customer_email,customer_hpnumber) 
+		values(customer_seq.nextval,#{customer_name},#{customer_id},#{customer_passwd},#{customer_email},#{customer_hpnumber})
 	</insert>
 
 	
@@ -19,6 +19,16 @@
       SELECT COUNT(*) FROM customer
       WHERE
           customer_id = #{customer_id}
+	</select>
+	
+	<select id="GetDataList" resultType="MyCustomer">
+		select * from customer where 
+		customer_name = #{customer_name} and customer_hpnumber = #{customer_hpnumber}
+	</select>
+	
+	<select id="ListData" resultType="MyCustomer">
+		select * from customer where 
+		order by num
 	</select>
 	
 </mapper>

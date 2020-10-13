@@ -113,4 +113,11 @@ customer_passwd varchar2(50),
 customer_email varchar2(50)
 );
 
+col customerno for a6
+col customer_name for a8
+col customer_id for a8
+col customer_passwd for a6
+col customer_email for a15
+col customer_hpnumber for a15
+select * from customer;
 

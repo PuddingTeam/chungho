@@ -50,7 +50,17 @@ public class CustomerRegisterController {
 
 		response.setContentType("text/html;charset=UTF-8");
 		ModelAndView mav = new ModelAndView();
-		
+		//중복검사
+			
+//		if(customer.getCustomer_id().equals(dbcustomer.getCustomer_id())){
+//			System.out.println("아이디와 db아이디가 중복됨");
+//			pw.println("<script type='text/javascript'>");
+//			pw.println("alert('아이디가 중복됩니다.');");
+//			pw.println("</script>");
+//			pw.flush();   //내보내기
+//			return new ModelAndView(getPage);
+//
+//		}
 			if(result.hasErrors()) { 
 				mav.setViewName(getPage);
 				return mav;

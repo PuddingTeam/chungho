@@ -1,8 +1,17 @@
 package Login.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+
+
+
+
+
 
 
 @Component("myCustomerDao")
@@ -31,12 +40,33 @@ public class CustomerDao {
 
 
 
-	public int idcheck(String customer_id) {
-		int cnt = sqlSessionTemplate.selectOne(namespace + ".idcheck",customer_id);
-		return cnt;
+	public List<Customer> getDataList(Customer customer) {
+		
+		List<Customer> lists = new ArrayList<Customer>();
+		
+		lists = sqlSessionTemplate.selectList(namespace + ".ListData",customer);
+		return lists ;
 	}
 
 
-	
-	
+	public Customer getDataList(String customer_name, String customer_hpnumber) {
+		Customer customer = new Customer();
+		customer.setCustomer_name(customer_name);
+		customer.setCustomer_hpnumber(customer_hpnumber);
+		sqlSessionTemplate.selectList(namespace + ".GetDataList",customer);
+		return customer; 
+	}
+
+
+
+	public Customer getDataList(String customer_name, String customer_hpnumber, String customer_id) {
+		Customer customer = new Customer();
+		customer.setCustomer_name(customer_name);
+		customer.setCustomer_hpnumber(customer_hpnumber);
+		customer.setCustomer_id(customer_id);
+		sqlSessionTemplate.selectList(namespace + ".GetDataList",customer);
+		return customer; 
+	}
+
+
 }

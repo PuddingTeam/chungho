@@ -5,7 +5,12 @@
 	function register(){
 		location.href="registerForm.me"; // => MemberRegisterController.java
 	}
-	
+	function findid(){
+		location.href="findid.me"; // => MemberRegisterController.java
+	}
+	function findpwd(){
+		location.href="findpwd.me"; // => MemberRegisterController.java
+	}
 
 </script>
 <form method="post" action="loginForm.me">
@@ -23,7 +28,8 @@
 		<tr>
 			<td colspan="2">
 				<input type="submit" value="로그인">
-				<input type="button" value="아이디/비밀번호 찾기">
+				<input type="button" value="아이디 찾기" onClick="findid()">
+				<input type="button" value="비밀번호 찾기" onClick="findpwd()">				
 				<input type="button" value="회원가입" onClick="register()"> 
 			</td>
 		</tr>
