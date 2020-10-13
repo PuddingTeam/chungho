@@ -43,8 +43,8 @@
 				<ul>
 					<li class="active"><a href="${path}/resources/index.html">메인</a></li>
 					<li><a href="${path}/resources/left-sidebar.html">푸딩차트</a></li>
-					<li><a href="${path}/resources/right-sidebar.html">푸딩 DJ</a></li>
-					<li><a href="${path}/resources/right-sidebar.html">게시판</a></li>
+					<li><a href="addDj.ms">푸딩 DJ</a></li>
+					<li><a href="list.bd">게시판</a></li>
 					<li><a href="${path}/resources/right-sidebar.html">Q&A</a></li>
 					<li><a href="${path}/resources/right-sidebar.html">공지사항</a></li>
 					<li><a href="loginForm.me">로그인</a></li>

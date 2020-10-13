@@ -3,18 +3,13 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="DJ.model.Dj">
+<mapper namespace="Music.model.Dj">
+<select id="GetDjList" resultType="MyDJ">
+select * from Dj order by Dj_no
+</select>
+
+<insert id="insertDj">
+insert into Dj(Dj_no,Dj_code,Dj_list) values(Dj_seq.nextval, #{dj_code},#{dj_list})
+</insert>
 
 </mapper>
-
-<!-- parameterType : resultType -->
-
-
-
-
-
-
-
-
-
-

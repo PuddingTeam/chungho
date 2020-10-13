@@ -8,7 +8,10 @@
 		<typeAlias type="Admin.model.Notice" alias="MyNotice" />
 		<typeAlias type="Music.model.Music" alias="MyMusic" />
 		<typeAlias type="Login.model.Customer" alias="MyCustomer" />
-		<typeAlias type="DJ.model.Dj" alias="MyDj" />
+		<typeAlias type="Music.model.Dj" alias="MyDj" />
+		<typeAlias type="Category.model.Category" alias="MyCategory"/>
+		<typeAlias type="Music.model.Music" alias="MyMusic"/>
+		 <typeAlias type="Boarder.model.Boarder" alias="MyBoarder"/>
 	</typeAliases>
 
 	<mappers>
@@ -17,7 +20,8 @@
 		<mapper resource="Pudding/mybatis/Pudding.xml" />
 		<mapper resource="Pudding/mybatis/Music.xml" />
 		<mapper resource="Pudding/mybatis/Dj.xml" />
-
+		<mapper resource="Pudding/mybatis/Boarder.xml" />
+		<mapper resource="Pudding/mybatis/Category.xml"/>
 	</mappers>
 </configuration>
 

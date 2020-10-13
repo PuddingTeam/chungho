@@ -20,7 +20,7 @@ MemberRegisterForm.jsp<br>
 		<tr>
 			<td>아이디</td>
 			<td>
-			<input type="text" name="customer_id" id="id" value="park">
+			<input type="text" name="customer_id" id="id">
 			<form:errors cssClass="err" path="customer_id" />
 			
 			</td>
@@ -29,7 +29,7 @@ MemberRegisterForm.jsp<br>
 		<tr>
 			<td>이름</td>
 			<td>
-			<input type="text" name="customer_name" id="name" value="박청호">
+			<input type="text" name="customer_name" id="name">
 			<form:errors cssClass="err" path="customer_name" />
 			</td>
 			
@@ -37,7 +37,7 @@ MemberRegisterForm.jsp<br>
 		<tr>
 			<td>비번</td>
 			<td>
-			<input type="text" name="customer_passwd" id="password" value="1234">
+			<input type="text" name="customer_passwd" id="password">
 			<form:errors cssClass="err" path="customer_passwd" />
 			</td>
 			
@@ -45,7 +45,7 @@ MemberRegisterForm.jsp<br>
 		<tr>
 			<td>이메일</td>
 			<td>
-			<input type="email" name="customer_email" id="email" value="cjdghqkr6143@gmail.com">
+			<input type="email" name="customer_email" id="email" >
 			<form:errors cssClass="err" path="customer_email" />
 			</td>
 		</tr>

@@ -1,35 +1,36 @@
-package DJ.model;
+package Music.model;
 
 public class Dj {
-private int Dj_no;
-private String Dj_code;
-private String Dj_list;
+private int dj_no;
+private String dj_code;
+private String dj_list;
 public Dj() {
 	super();
 }
 public int getDj_no() {
-	return Dj_no;
+	return dj_no;
 }
 public void setDj_no(int dj_no) {
-	Dj_no = dj_no;
+	this.dj_no = dj_no;
 }
 public String getDj_code() {
-	return Dj_code;
+	return dj_code;
 }
 public void setDj_code(String dj_code) {
-	Dj_code = dj_code;
+	this.dj_code = dj_code;
 }
 public String getDj_list() {
-	return Dj_list;
+	return dj_list;
 }
 public void setDj_list(String dj_list) {
-	Dj_list = dj_list;
+	this.dj_list = dj_list;
 }
 public Dj(int dj_no, String dj_code, String dj_list) {
 	super();
-	Dj_no = dj_no;
-	Dj_code = dj_code;
-	Dj_list = dj_list;
+	this.dj_no = dj_no;
+	this.dj_code = dj_code;
+	this.dj_list = dj_list;
 }
+
 
 }
